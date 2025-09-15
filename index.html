@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de" class="h-full bg-gray-900">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus AI Assistent</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js")
+        .then(() => console.log("Service Worker registriert"))
+        .catch(err => console.error("SW Fehler:", err));
+    }
+    </script>
+</head>
+<body>
+    <h1 style="color:white;background:#111827;padding:20px;">Nexus AI Assistent</h1>
+    <p style="color:white;padding:20px;">Dies ist die PWA-Version deiner App. Lade sie auf GitHub Pages hoch und installiere sie über Safari &gt; Zum Home-Bildschirm.</p>
+</body>
+</html>
